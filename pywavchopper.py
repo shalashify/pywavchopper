@@ -52,7 +52,10 @@ def build_chunks(silence_threshold = -40 # Everything below is considered silenc
 
            # If current chunk is longer that defined minimal length then consider it
            if(chunk_end > chunk_start and chunk_end - chunk_start > chunk_min_length):
-               chunks.append(sound[chunk_start-fadeinout:chunk_end+fadeinout])
+               # Check that start / end position considering fade in / fade out do not exceed file length
+               start_pos = (chunk_start - fadeinout) if (chunk_start - fadeinout >= 0) else chunk_start
+               end_pos = (chunk_end + fadeinout) if (chunk_start + fadeinout < len(sound)) else chunk_end
+               chunks.append(sound[start_pos:end_pos])
                # Gather some metadata, just for display
                start_pos_ss, start_pos_mm, start_pos_hh = convert_ms(chunk_start)
                end_pos_ss, end_pos_mm, end_pos_hh = convert_ms(chunk_end)
@@ -141,7 +144,7 @@ def main():
 
     if(os.path.isfile(source_filename)):
         print("==============================================================================================================")
-        print("Processing file " + source_filename)
+        print("Analyzing File " + source_filename)
         source, source_file_extension = os.path.splitext(sourcefile)
         sound = AudioSegment.from_file(source_filename, format="wav")
 

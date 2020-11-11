@@ -1,5 +1,5 @@
 # pywavchopper
-Chops large wav files into chunks based on loudness level drops (silence gets cut out).
+Chops large wav files into chunks based on loudness level drops (silence gets cut out). Performs good on large files.
 Might be useful for chopping band rehearsal into songs or interviews into chunks.
 
 # Functions
@@ -19,7 +19,7 @@ python3 pywavchopper.py m0.ini
 Source wav filename (within /Users/alec/Music Production/Projects/m0/Rehearsals/source folder)? 2020-07-
 28.wav
 ==============================================================================================================
-Processing file /Users/alec/Music Production/Projects/m0/Rehearsals/source/2020-06-23-1.wav
+Analyzing File /Users/alec/Music Production/Projects/m0/Rehearsals/source/2020-06-23-1.wav
 Length: 01:08:34
 Average Loudness: -21 dBFS
 Silence Threshold (default: -40 dBFS): [Enter]
