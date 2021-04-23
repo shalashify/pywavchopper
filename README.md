@@ -26,8 +26,7 @@ python3 pywavchopper.py m0.ini
 
 
 
-Source wav filename (within /Users/alec/Music Production/Projects/m0/Rehearsals/source folder)? 2020-07-
-28.wav
+Source wav filename (within /Users/alec/Music Production/Projects/m0/Rehearsals/source folder)? 2020-06-23-1.wav
 ==============================================================================================================
 Analyzing File /Users/alec/Music Production/Projects/m0/Rehearsals/source/2020-06-23-1.wav
 Length: 01:08:34
