@@ -16,6 +16,16 @@ Might be useful for chopping band rehearsal into songs or interviews into chunks
 
 ```
 python3 pywavchopper.py m0.ini
+
+
+                                   __
+   ___  __ ___    _____ __  ______/ /  ___  ___  ___  ___ ____
+  / _ \/ // / |/|/ / _ `/ |/ / __/ _ \/ _ \/ _ \/ _ \/ -_) __/
+ / .__/\_, /|__,__/\_,_/|___/\__/_//_/\___/ .__/ .__/\__/_/
+/_/   /___/                              /_/  /_/
+
+
+
 Source wav filename (within /Users/alec/Music Production/Projects/m0/Rehearsals/source folder)? 2020-07-
 28.wav
 ==============================================================================================================
